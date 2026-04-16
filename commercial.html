@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial | Elijah Knight</title>
+    <meta name="description" content="Commercial work and brand collaborations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-title">Elijah Knight</span>
+          <span class="brand-subtitle">Actor - Speaker - Coach</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation" data-main-nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="film.html">Film</a></li>
+            <li><a class="nav-link" href="speaker.html">Speaker</a></li>
+            <li><a class="nav-link" href="commercial.html">Commercial</a></li>
+            <li><a class="nav-link" href="coaching.html">Coaching</a></li>
+            <li><a class="nav-link" href="press.html">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Commercial</h1>
+        <p>
+          Present selected brand campaigns, ad spots, and commercial highlights.
+          This page can become a concise catalog for agencies and producers.
+        </p>
+      </section>
+
+      <section class="sections-grid" aria-label="Commercial details">
+        <article class="section-card">
+          <h2>Featured Campaigns</h2>
+          <p>Add your most visible work and the role in each production.</p>
+        </article>
+        <article class="section-card">
+          <h2>Brand Partners</h2>
+          <p>List notable clients and include campaign year for context.</p>
+        </article>
+        <article class="section-card">
+          <h2>On-Camera Presence</h2>
+          <p>Mention style strengths: luxury, lifestyle, character-driven, comedic, etc.</p>
+        </article>
+        <article class="section-card">
+          <h2>Request Reel</h2>
+          <p>Provide a dedicated contact for commercial reel requests.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="year">2026</span> Elijah Knight. All rights reserved.</p>
+        <div class="footer-links">
+          <a class="social-link" href="https://www.instagram.com/p/DXJRO6wuVqD/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95h-8.5Zm8.96 1.42a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"/></svg>
+            Instagram
+          </a>
+          <a class="social-link" href="https://www.filmmakers.eu/en/actors/elijah-knight" target="_blank" rel="noopener noreferrer">Filmmakers</a>
+        </div>
+        <a class="footer-email" href="mailto:actorelijahknight@gmail.com">actorelijahknight@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      var yearNode = document.getElementById("year");
+      if (yearNode) yearNode.textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

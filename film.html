@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film | Elijah Knight</title>
+    <meta name="description" content="Filmography and showreel for Elijah Knight." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-title">Elijah Knight</span>
+          <span class="brand-subtitle">Actor - Speaker - Coach</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation" data-main-nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="film.html">Film</a></li>
+            <li><a class="nav-link" href="speaker.html">Speaker</a></li>
+            <li><a class="nav-link" href="commercial.html">Commercial</a></li>
+            <li><a class="nav-link" href="coaching.html">Coaching</a></li>
+            <li><a class="nav-link" href="press.html">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Film</h1>
+        <p>
+          Selected works in motion. Four featured clips are shown below in a 2x2 cinematic grid.
+        </p>
+      </section>
+
+      <section class="film-grid" aria-label="Featured film reels">
+        <article class="film-bubble">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/film-1.mp4" type="video/mp4" />
+          </video>
+          <div class="film-bubble-overlay"></div>
+          <div class="film-bubble-label">
+            <h2>L'assurance au travail</h2>
+          </div>
+        </article>
+
+        <article class="film-bubble">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/film-2.mp4" type="video/mp4" />
+          </video>
+          <div class="film-bubble-overlay"></div>
+          <div class="film-bubble-label">
+            <h2>Pas Assez (produit par Knight TV)</h2>
+          </div>
+        </article>
+
+        <article class="film-bubble">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/film-3.mp4" type="video/mp4" />
+          </video>
+          <div class="film-bubble-overlay"></div>
+          <div class="film-bubble-label">
+            <h2>Action Reel</h2>
+          </div>
+        </article>
+
+        <article class="film-bubble">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/film-4.mp4" type="video/mp4" />
+          </video>
+          <div class="film-bubble-overlay"></div>
+          <div class="film-bubble-label">
+            <h2>Der Letzte Atemzug</h2>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="year">2026</span> Elijah Knight. All rights reserved.</p>
+        <div class="footer-links">
+          <a class="social-link" href="https://www.instagram.com/p/DXJRO6wuVqD/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95h-8.5Zm8.96 1.42a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"/></svg>
+            Instagram
+          </a>
+          <a class="social-link" href="https://www.filmmakers.eu/en/actors/elijah-knight" target="_blank" rel="noopener noreferrer">Filmmakers</a>
+        </div>
+        <a class="footer-email" href="mailto:actorelijahknight@gmail.com">actorelijahknight@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      var yearNode = document.getElementById("year");
+      if (yearNode) yearNode.textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
