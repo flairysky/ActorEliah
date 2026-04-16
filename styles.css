@@ -240,6 +240,34 @@ main {
   backdrop-filter: blur(8px);
 }
 
+.news-card.is-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+.news-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.close-instagram-card {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .news-copy {
   color: var(--muted);
   margin: 0.7rem 0 0.9rem;
@@ -323,7 +351,7 @@ main {
 .clients {
   margin-top: 1.5rem;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 16px;
   padding: 1rem;
 }
@@ -347,6 +375,11 @@ main {
   border-radius: 20px;
   padding: 2rem;
   background: linear-gradient(130deg, rgba(255, 0, 47, 0.24), rgba(8, 29, 63, 0.54));
+}
+
+.page-hero.plain-hero {
+  border: 0;
+  background: rgba(10, 33, 72, 0.3);
 }
 
 .page-hero h1 {
@@ -443,8 +476,8 @@ main {
   border: 0;
 }
 
-.about-contact-card,
-.about-cv-card {
+.section-card.about-contact-card,
+.section-card.about-cv-card {
   border: 0;
 }
 

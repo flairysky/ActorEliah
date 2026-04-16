@@ -60,6 +60,23 @@
     }
   }
 
+  var instagramCard = document.querySelector("[data-instagram-card]");
+  var closeInstagramCardBtn = document.querySelector("[data-close-instagram-card]");
+
+  if (instagramCard) {
+    window.setTimeout(function () {
+      instagramCard.classList.remove("is-hidden");
+      instagramCard.classList.add("is-visible");
+    }, 2000);
+  }
+
+  if (closeInstagramCardBtn && instagramCard) {
+    closeInstagramCardBtn.addEventListener("click", function () {
+      instagramCard.classList.remove("is-visible");
+      instagramCard.classList.add("is-hidden");
+    });
+  }
+
   var metricValues = document.querySelectorAll(".metric-value[data-target]");
   if (metricValues.length) {
     var hasAnimatedMetrics = false;
@@ -67,7 +84,7 @@
     var animateValue = function (element) {
       var target = Number(element.getAttribute("data-target") || 0);
       var suffix = element.getAttribute("data-suffix") || "";
-      var duration = 1200;
+      var duration = 2900;
       var startTime = null;
 
       var tick = function (timestamp) {
