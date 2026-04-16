@@ -238,6 +238,7 @@ main {
   min-height: auto;
   z-index: 5;
   backdrop-filter: blur(8px);
+  transition: opacity 1.1s ease, transform 1.1s ease;
 }
 
 .news-card.is-hidden {
@@ -250,7 +251,6 @@ main {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
-  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .close-instagram-card {
@@ -349,7 +349,7 @@ main {
 }
 
 .clients {
-  margin-top: 1.5rem;
+  margin-top: 0.55rem;
   background: var(--surface);
   border: 0;
   border-radius: 16px;
@@ -457,7 +457,7 @@ main {
 .about-video,
 .about-cv-frame {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 14px;
   background: rgba(4, 13, 30, 0.82);
 }
@@ -481,6 +481,11 @@ main {
   border: 0;
 }
 
+.section-card.about-video-card,
+.section-card.about-portraits-card {
+  border: 0;
+}
+
 .about-portraits-grid {
   display: grid;
   gap: 0.8rem;
@@ -492,7 +497,7 @@ main {
   height: 320px;
   object-fit: cover;
   border-radius: 14px;
-  border: 1px solid var(--line);
+  border: 0;
 }
 
 .press-grid {
