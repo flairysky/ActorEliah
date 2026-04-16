@@ -29,6 +29,11 @@
     }
   });
 
+  var aboutCvFrame = document.querySelector(".about-cv-frame[data-src]");
+  if (aboutCvFrame && !window.matchMedia("(max-width: 980px)").matches) {
+    aboutCvFrame.src = aboutCvFrame.getAttribute("data-src") || "";
+  }
+
   var localBgVideo = document.querySelector(".hero-video-local");
   var youtubeBgVideo = document.querySelector(".hero-video-youtube");
 

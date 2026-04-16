@@ -476,6 +476,11 @@ main {
   border: 0;
 }
 
+.about-cv-mobile-link {
+  display: none;
+  margin-top: 0.9rem;
+}
+
 .section-card.about-contact-card,
 .section-card.about-cv-card {
   border: 0;
@@ -626,9 +631,11 @@ main {
   }
 
   .news-card {
-    position: static;
-    width: 100%;
-    margin-top: 1rem;
+    position: absolute;
+    right: 0.8rem;
+    bottom: 5.2rem;
+    width: min(360px, 90vw);
+    margin-top: 0;
   }
 
   .hero {
@@ -660,6 +667,25 @@ main {
 
   .about-cv-frame {
     min-height: 520px;
+    display: none;
+  }
+
+  .about-cv-mobile-link {
+    display: inline-flex;
+  }
+
+  .footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-email {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -720,6 +746,12 @@ main {
   .hero-ticker-track {
     padding: 0.6rem 0.8rem;
     animation-duration: 16s;
+  }
+
+  .news-card {
+    width: min(360px, 92vw);
+    bottom: 5rem;
+    right: 0.6rem;
   }
 
   .metrics {
