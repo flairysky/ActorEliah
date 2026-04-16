@@ -5,7 +5,7 @@
   --text: #ffffff;
   --muted: #d7deec;
   --accent: #ff002f;
-  --accent-soft: #ffd2dd;
+  --accent-soft: #ff3048;
   --line: rgba(255, 255, 255, 0.28);
   --shadow: none;
 }
@@ -20,7 +20,7 @@ body {
   padding: 0;
   font-family: "Manrope", "Segoe UI", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 16% -24%, #ff0028 0, #0a2d5f 34%, #041428 100%);
+  background: radial-gradient(circle at 18% -28%, #123a78 0, #0a2d5f 38%, #041428 100%);
   min-height: 100%;
 }
 
@@ -201,7 +201,7 @@ main {
 
 .hero-content {
   position: absolute;
-  inset: auto 0 0;
+  inset: auto 0 3.2rem;
   z-index: 2;
   padding: clamp(1rem, 2.4vw, 2rem);
 }
@@ -227,7 +227,7 @@ main {
 
 .news-card {
   position: absolute;
-  bottom: 1rem;
+  bottom: 3.9rem;
   right: 1rem;
   width: min(360px, 34vw);
   background: var(--surface);
@@ -302,7 +302,7 @@ main {
 
 .metric {
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 16px;
   padding: 1rem;
   text-align: center;
@@ -346,7 +346,7 @@ main {
   border: 1px solid var(--line);
   border-radius: 20px;
   padding: 2rem;
-  background: linear-gradient(130deg, rgba(197, 19, 47, 0.2), rgba(8, 29, 63, 0.54));
+  background: linear-gradient(130deg, rgba(255, 0, 47, 0.24), rgba(8, 29, 63, 0.54));
 }
 
 .page-hero h1 {
@@ -440,6 +440,12 @@ main {
 
 .about-cv-frame {
   min-height: 640px;
+  border: 0;
+}
+
+.about-contact-card,
+.about-cv-card {
+  border: 0;
 }
 
 .about-portraits-grid {
