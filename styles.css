@@ -345,8 +345,8 @@ main {
 }
 
 .metric span {
-  color: #ffffff;
-  font-weight: 700;
+  color: #ffffff !important;
+  font-weight: 800 !important;
   font-size: 0.9rem;
 }
 
@@ -356,10 +356,18 @@ main {
   border: 0;
   border-radius: 16px;
   padding: 1rem;
+  text-align: center;
 }
 
 .clients h2 {
-  text-align: center;
+  width: 100%;
+  margin: 0 0 1rem;
+  text-align: center !important;
+}
+
+.footer-rights-block {
+  display: inline;
+  margin-left: 0.35rem;
 }
 
 .logo-row {
@@ -637,7 +645,7 @@ main {
   }
 
   .news-card {
-    display: none;
+    display: none !important;
   }
 
   .hero {
@@ -691,7 +699,12 @@ main {
   }
 
   .mobile-center-title .page-hero h1 {
-    text-align: center;
+    text-align: center !important;
+  }
+
+  .footer-rights-block {
+    display: block;
+    margin-left: 0;
   }
 }
 
@@ -761,9 +774,7 @@ main {
   }
 
   .news-card {
-    width: min(360px, 92vw);
-    bottom: 5rem;
-    right: 0.6rem;
+    display: none !important;
   }
 
   .metrics {
