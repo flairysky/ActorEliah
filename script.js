@@ -68,7 +68,7 @@
   var instagramCard = document.querySelector("[data-instagram-card]");
   var closeInstagramCardBtn = document.querySelector("[data-close-instagram-card]");
 
-  if (instagramCard) {
+  if (instagramCard && !window.matchMedia("(max-width: 980px)").matches) {
     window.setTimeout(function () {
       instagramCard.classList.remove("is-hidden");
       instagramCard.classList.add("is-visible");

@@ -345,7 +345,8 @@ main {
 }
 
 .metric span {
-  color: var(--muted);
+  color: #ffffff;
+  font-weight: 700;
   font-size: 0.9rem;
 }
 
@@ -355,6 +356,10 @@ main {
   border: 0;
   border-radius: 16px;
   padding: 1rem;
+}
+
+.clients h2 {
+  text-align: center;
 }
 
 .logo-row {
@@ -632,11 +637,7 @@ main {
   }
 
   .news-card {
-    position: absolute;
-    right: 0.8rem;
-    bottom: 5.2rem;
-    width: min(360px, 90vw);
-    margin-top: 0;
+    display: none;
   }
 
   .hero {
@@ -686,6 +687,10 @@ main {
 
   .footer-email {
     width: 100%;
+    text-align: center;
+  }
+
+  .mobile-center-title .page-hero h1 {
     text-align: center;
   }
 }
